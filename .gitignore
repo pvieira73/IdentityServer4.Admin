@@ -284,3 +284,7 @@ __pycache__/
 appsettings.*.json
 
 /shared/nginx/certs/
+/.docker/
+/mydata/
+
+/docs/Docs.pvieira73.lnk

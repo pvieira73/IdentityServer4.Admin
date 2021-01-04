@@ -12,6 +12,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Content Include="..\..\shared\identitydata.json" Link="identitydata.json" />
+      <Content Include="..\..\shared\identityserverdata.json" Link="identityserverdata.json" />
+      <Content Include="..\..\shared\serilog.json" Link="serilog.json" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="AspNetCore.HealthChecks.MySql" Version="3.1.1" />
         <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="3.1.1" />
         <PackageReference Include="AspNetCore.HealthChecks.OpenIdConnectServer" Version="3.1.1" />
