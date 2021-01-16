@@ -1,3 +1,10 @@
+resources:
+  repositories:
+  - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: pvieira73
+    name: pvieira73/IdentityServer4.Admin 
+
 trigger:
 - main
 
@@ -12,6 +19,9 @@ variables:
   Parameters.ArtifactName: 'Drop'
 
 steps:
+- checkout: MyGitHubRepo
+- checkout: self
+
 - task: DotNetCoreCLI@2
   displayName: 'dotnet restore'
   inputs:
