@@ -11,7 +11,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\..\shared\serilog.json" Link="serilog.json" />
+      <Content Include="..\..\private\shared\serilog.json" Link="serilog.json" />
     </ItemGroup>
 
     <ItemGroup>

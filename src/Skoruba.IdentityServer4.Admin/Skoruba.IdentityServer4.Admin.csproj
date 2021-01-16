@@ -12,9 +12,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\..\shared\identitydata.json" Link="identitydata.json" />
-      <Content Include="..\..\shared\identityserverdata.json" Link="identityserverdata.json" />
-      <Content Include="..\..\shared\serilog.json" Link="serilog.json" />
+      <Content Include="..\..\private\shared\identitydata.json" Link="identitydata.json" />
+      <Content Include="..\..\private\shared\identityserverdata.json" Link="identityserverdata.json" />
+      <Content Include="..\..\private\shared\serilog.json" Link="serilog.json" />
     </ItemGroup>
 
     <ItemGroup>
