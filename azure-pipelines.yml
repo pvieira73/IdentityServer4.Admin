@@ -9,6 +9,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  Parameters.ArtifactName: 'Drop'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -25,5 +26,8 @@ steps:
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
-
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: '$(Parameters.ArtifactName)'
+  condition: succeededOrFailed()
