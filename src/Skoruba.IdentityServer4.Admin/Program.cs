@@ -25,7 +25,6 @@ namespace Skoruba.IdentityServer4.Admin
         public static async Task Main(string[] args)
         {
             var configuration = GetConfiguration(args);
-
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
